@@ -121,7 +121,7 @@ def log_token():
     convert=raw_input("%s [%s•%s] Token: "%(p,b,p))
     try:
         saya=requests.get('https://graph.facebook.com/me?access_token=%s'%(convert));open("login.txt",'w').write(convert)
-        print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(deku.dekudesu())
+        print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(noah.dekudesu())
     except KeyError:
         print("\n %s[%s!%s] Token invalid!"%(p,m,p));time.sleep(1);login()
 
@@ -157,7 +157,7 @@ def cookie():
 	cookie = open("login.txt", 'w')
 	cookie.write(find_token.group(1))
 	cookie.close()
-	print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(deku.dekudesu())
+	print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(noah.dekudesu())
 def menu():
     try:
         token = open("login.txt","r").read()
